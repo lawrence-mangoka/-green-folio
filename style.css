@@ -1,0 +1,733 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+
+/*variables*/
+:root {
+    --main-color: #0FBF61;
+    --white: #ffff;
+    --padding: 10px 20px;
+    --black: #000;
+    --font-family: "Montserrat", sans-serif;
+    --background-color: #d6f5e5;
+}
+
+/*Global Styles*/
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+.logo {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: -11vh;
+
+}
+
+.logo .logop {
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.logo .logof {
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 2rem;
+    border-radius: 3px;
+}
+
+/* navigation styles */
+header {
+    height: 5rem;
+    width: 100%;
+    background-color: var(--white);
+    padding-left: 10px;
+
+}
+
+header nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    gap: 3.2rem;
+
+}
+
+header nav div ul {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    padding: 10px 30px;
+
+}
+
+p {
+    font-size: 9px;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+.span {
+    background-color: var(--white);
+    color: var(--main-color);
+    outline-color: black;
+    padding: var(--padding);
+    position: relative;
+    z-index: 400;
+    border-radius: 4px;
+}
+
+.span-welcome {
+    border-radius: 3px;
+    text-align: center;
+    border: none;
+    padding: var(--padding);
+
+}
+
+.nav-link {
+    padding-left: 10px;
+    position: relative;
+    left: 10vh;
+}
+
+/* Global Styles */
+.btn-pri {
+    background-color: var(--main-color);
+    color: var(--white);
+    border-radius: 3px;
+    padding: var(--padding);
+    font-size: 1rem;
+    align-items: center;
+    border: none;
+}
+
+/* hero section */
+.hero {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.hero .image-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 50%;
+
+
+}
+
+.hero .image-side .rounded-rectangle {
+    height: 20rem;
+    width: 35rem;
+    background-color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 30rem;
+    -webkit-transform: rotate(-40deg);
+    position: relative;
+    left: 200px;
+    bottom: 40px;
+
+
+}
+
+.hero .image-side .rounded-rectangle img {
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-transform: rotate(40deg);
+    position: relative;
+    right: 120px;
+    top: 5px;
+    border: 12px solid white;
+
+}
+
+
+.explore {
+    background-color: var(--white);
+    color: var(--black);
+    border: solid 2px;
+    padding: var(--padding);
+    font-size: 1rem;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.text {
+    text-align: left;
+    padding: var(--padding);
+    position: relative;
+    left: 110vh;
+    bottom: 95vh;
+    display: grid;
+
+}
+
+.light-background {
+    position: relative;
+    bottom: 5vh;
+    display: inline-block;
+    background-color: var(--background-color);
+    color: var(--main-color);
+    border-radius: 5%;
+
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    border: solid 20px var(--main-color);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    right: -5vh;
+    bottom: 15vh;
+    z-index: 400;
+
+}
+
+.welcome {
+    position: relative;
+    right: 10vh;
+    top: 10vh;
+
+}
+
+.social-media {
+    position: relative;
+    top: 50px;
+    padding-bottom: 10px;
+    list-style: none;
+    display: grid;
+    gap: -9rem;
+    justify-content: space-between;
+
+
+}
+
+.pic2 {
+    height: 380px;
+    width: 450px;
+    position: relative;
+    left: 17vh;
+    bottom: 33vh;
+}
+
+.download-cv {
+    position: relative;
+    top: 9vh;
+    background-color: var(--main-color);
+    color: var(--white);
+    border-radius: 4px;
+    border: solid;
+    padding: var(--padding);
+    font-size: 1rem;
+    align-items: center;
+    transition: all ease-in;
+}
+
+.boxed {
+    border: none;
+    background-color: var(--background-color);
+    color: var(--main-color);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: relative;
+    bottom: 30px;
+
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+}
+
+/*  a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+    background-color: var(--main-color);
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    color: var(--white);
+}
+
+.header {
+    align-items: center;
+    padding: var(--padding);
+    margin-left: 30rem;
+    display: block;
+}
+
+.cards {
+    width: 100%;
+    height: 140vh;
+}
+
+.text-align {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    margin: 40px;
+    padding-left: 10px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 #00000033;
+    box-sizing: content-box;
+    size: 10px;
+    width: 250px;
+    height: 260px;
+    padding: 10px;
+    margin: 40px;
+
+}
+
+.card:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.row-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.expertise {
+    margin: 90px;
+}
+
+.progress {
+    display: grid;
+    gap: 5rem;
+    margin: 7%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.skill {
+    padding: 1.5px;
+    background-color: var(--main-color);
+    width: 75%;
+}
+
+.headings {
+    align-items: center;
+    display: block;
+    padding-left: 40%;
+    justify-content: space-between;
+}
+
+.nav-2 {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-left: 40.5%;
+    font-size: 11px;
+}
+
+.work-examples {
+    display: flex;
+    position: relative;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 10px;
+    position: relative;
+    left: 15%;
+}
+
+.card-2 {
+    box-sizing: content-box;
+    box-shadow: 0 4px 8px 0 #00000033;
+    width: 250px;
+}
+
+.card-2:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.text-align-2 {
+    text-align: left;
+    position: relative;
+    top: 50px;
+    margin: 40px;
+    padding-left: 10px;
+    justify-content: space-between;
+
+}
+
+.view-all {
+    position: relative;
+    top: 270px;
+    right: 40%;
+    margin: 20px;
+}
+
+.work {
+    height: 130vh;
+    width: 100%;
+}
+
+.box-shadow2 {
+    box-shadow: 0 4px 8px 0#00000033;
+    box-sizing: border-box;
+    height: 15rem;
+    width: 40rem;
+    margin-left: 22%;
+}
+
+.box-text {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+
+}
+
+.testimonials {
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    position: relative;
+    left: 5rem;
+}
+
+.what-ppl-say {
+    position: relative;
+    top: 5rem;
+    margin-bottom: 30px;
+}
+
+.box {
+    height: 250px;
+    width: 700px;
+    box-sizing: content-box;
+    position: relative;
+    z-index: -1000;
+    right: -26.5rem;
+    top: 300px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, .2);
+    margin-bottom: 25rem;
+
+}
+
+.boxed1 {
+    height: 500px;
+    width: 900px;
+    box-sizing: content-box;
+    align-items: center;
+    position: relative;
+    right: 7.5rem;
+    bottom: 300px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, .2);
+    background-color: var(--white);
+}
+
+.quotes {
+    color: var(--main-green);
+    font-size: 200px;
+    margin-bottom: 1rem;
+    position: relative;
+    right: 1.5rem;
+}
+
+.John-Doe {
+    margin-top: 3rem;
+    line-height: 50px;
+    right: 3rem;
+}
+
+.John {
+    font-size: 45px;
+    margin-top: 3rem;
+}
+
+.ceo {
+    font-weight: 100;
+}
+
+/* start of blog section */
+.Blog {
+    position: relative;
+    left: 400px;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.headings {
+    text-align: center;
+    gap: 3rem;
+    position: relative;
+    right: 18rem;
+}
+
+.blog {
+    width: 100%;
+    height: 50vh;
+}
+
+.blog .Blog h3 {
+    position: relative;
+    bottom: 1rem;
+}
+
+.news {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: -50px;
+}
+
+.blog-box {
+    height: 300px;
+    width: 350px;
+    /* background-color: var(--main-green); */
+    position: relative;
+    bottom: 1rem;
+}
+
+.date {
+    color: var(--main-green);
+    position: relative;
+    top: 1rem;
+}
+
+.mbs-budget {
+    font-weight: 700;
+    position: relative;
+    top: 1rem;
+    line-height: 20px;
+}
+
+.blog .news span {
+    background: none;
+    font-weight: 900;
+    font-size: xx-large;
+    position: relative;
+    right: 1.2rem;
+    top: -0.7rem;
+}
+
+.texts {
+    position: relative;
+    top: 1rem;
+}
+
+.btn-blogs {
+    position: relative;
+    bottom: -3rem;
+    background-color: var(--white);
+    color: var(--main-green);
+    border: none;
+    outline: none;
+}
+
+.btn-blogs-2 {
+    padding: 10px 30px;
+    background-color: var(--main-green);
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    position: relative;
+    bottom: -18rem;
+    right: 43rem;
+}
+
+/* start of contact me styles */
+.contact {
+    height: 100vh;
+    width: 100%;
+}
+
+.contact-me {
+    position: relative;
+    left: 650px;
+    margin-top: 5rem;
+}
+
+.contacts {
+    position: relative;
+    right: 70px;
+}
+
+.contact .contact-me h2 {
+    position: relative;
+    top: 3rem;
+    right: 2.2rem;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    top: 7rem;
+    left: 7rem;
+}
+
+.inputs {
+    height: 2.5rem;
+    width: 30rem;
+    margin: 20px 20px;
+}
+
+.msg {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    top: 7rem;
+    left: 7rem;
+    margin-top: 1rem;
+}
+
+.msg-box {
+    height: 8rem;
+    width: 64.5rem;
+}
+
+.send-msg {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    top: 7rem;
+    left: 7rem;
+    margin-top: 2rem;
+}
+
+.btn-send-msg {
+    padding: 10px 30px;
+    background-color: var(--main-green);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: var(--white);
+}
+
+/* start of footer styles */
+.footer {
+    height: auto;
+    width: 100%;
+    margin-left: 13rem;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 40rem;
+}
+
+.pf {
+    display: flex;
+    gap: 4px;
+}
+
+.f {
+    background-color: var(--main-green);
+    padding: 2px 2px 1px 3px;
+}
+
+.footer .logo-footer span {
+    background: none;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.footer-content {
+    display: flex;
+    gap: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.footer-content div h2 {
+    color: var(--main-green);
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-content div p {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.www {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    left: 15px;
+}
+
+.www p {
+    text-align: center;
+    position: relative;
+    right: 7rem;
+}
+
+.footer-text {
+    position: relative;
+    right: 380px;
+
+}
